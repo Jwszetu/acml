@@ -7,8 +7,8 @@ use axum::{
 };
 
 use serde::Deserialize;
-use tower_http::services::ServeDir;
 use std::net::SocketAddr;
+use tower_http::services::ServeDir;
 
 pub use self::error::{Error, Result};
 
@@ -17,7 +17,6 @@ mod error;
 // -- region: reg_statics
 
 // -- endregion: reg_statics
-
 
 // -- region: reg_structs --
 #[derive(Template)]
