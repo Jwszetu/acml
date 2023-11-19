@@ -1,15 +1,12 @@
 use askama::Template;
-use askama_axum::Response;
 use axum::{
-    body::{self, Full, Empty},
-    extract::{Path, Query},
-    http::{ HeaderValue, StatusCode, header},
+    extract::Query,
     response::{Html, IntoResponse},
     routing::get,
     Router,
 };
-use include_dir::{include_dir, Dir};
-use serde::{Deserialize, Serialize};
+
+use serde::Deserialize;
 use tower_http::services::ServeDir;
 use std::net::SocketAddr;
 
@@ -18,8 +15,6 @@ pub use self::error::{Error, Result};
 mod error;
 
 // -- region: reg_statics
-
-static STATIC_DIR: Dir<'_> = include_dir!("$CARGO_MANIFEST_DIR/assets");
 
 // -- endregion: reg_statics
 

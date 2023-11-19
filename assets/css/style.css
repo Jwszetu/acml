@@ -1,5 +1,49 @@
 @import url("./normalize.css");
+@import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
+
+* {
+    font-family: 'Inter', sans-serif;
+}
 
 #content {
-    background-color: skyblue;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+
+    height: 100dvh;
+    overflow: hidden;
+
+    background: rgba(0, 0, 0, 0.8);
 }
+
+#app-container {
+    display: flex;
+    flex-direction: column;
+
+    height: 70dvh;
+    width: 50dvw;
+    padding: 3rem 2rem;
+
+    background-color: whitesmoke;
+
+    border: 1px solid transparent;
+    border-radius: 5px;
+
+}
+
+#app-container > h3 {
+    margin-top: unset;
+}
+
+.input-container {
+    display: flex;
+    margin: .5rem;
+}
+
+.input-container > input {
+    display: flex;
+    flex-grow: 1;
+    margin-right: 1rem; 
+}
+
+li.todo-item {}

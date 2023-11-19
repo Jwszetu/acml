@@ -7,6 +7,32 @@
 
 {% block content %}
 
-<h1>Index</h1>
+<div id="app-container">
+    <h3>TODO APP v0.5</h3>
+    <div class="input-container">
+        <input type="text" name="" id="input-item">
+        <button id="add-item">Add</button>
+    </div>
+    <div class="todos-container">
+        <div class="todos">
+            <div class="todo-item">
+                <div id="delete"><button></button></div>
+                <div class="item">
+                    <span class="title"></span>
+                    <div class="date"></div>
+                </div>
+            </div>
+        </div>
+        
+        <ul class="todos">
+            <li class="todo-item">item 1</li>
+            <li class="todo-item">item 2</li>
+            <li class="todo-item">item 3</li>
+            <li class="todo-item">item 4</li>
+        </ul>
+    </div>
+
+</div>
 
 {% endblock %}
+
